@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 14px;
+*:focus {
+  outline: none;
 }
 
-div {
-  width: 100%;
-  margin: 20px;
+body {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  background-color: #7159c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 div li {
@@ -26,6 +30,7 @@ button {
   background: #7159c1;
   color: #fff;
   border: 0;
+  border-radius: 4px;
   padding: 10px 15px;
   cursor: pointer;
   margin-top: 15px;
@@ -33,7 +38,69 @@ button {
   font-size: 14px;
 }
 
+button:hover {
+  background-color: rgba(113, 89, 193, 0.8);
+  transition: 0.2;
+}
+
+.button-block {
+  width: 50%;
+}
+
 div li button {
   margin: 0 15px;
   background: #ca4949;
+}
+
+div li button:hover {
+  background-color: rgba(202, 73, 73, 0.8);
+  transition: 0.2;
+}
+
+.container {
+  background-color: #fff;
+  height: 600px;
+  width: 900px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 15px;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+input {
+  margin-top: 10px;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+
+input:focus {
+  border-color: #7159c1;
+  transition: 0.6s;
+}
+
+.list-repositories {
+  margin-top: 20px;
+  width: 80%;
+}
+
+.repository {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
